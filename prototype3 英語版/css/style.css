@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* 共通部分 */
+
+html {
+	max-width: 1278px;
+	margin: 75px;
+	color: #fff;
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.box {
+	/* position   : relative; */
+	/* max-width  : 400px;
+	height     : 250px; */
+	margin     : auto;
+	overflow   : hidden;
+	background-repeat: no-repeat;
+  }
+  
+  /* --- 背景の指定 ------------------------------------------- */
+  .box .bgImg {
+	position   : absolute;
+	top        : 0;
+	left       : 0;
+	bottom     : 0;
+	right      : 0;
+	opacity    : 0;
+	animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
+  }
+  
+  /* --- 段差で背景画像のアニメーションを実行 ----------------- */
+  .box .src1 {
+	background-image : url("../images/pic_bg.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover; /* 背景の画像を指定 */
+  }
+  .box .src2 {
+	background-image : url("../images/pic_bg1.jpeg");
+	background-repeat: no-repeat;   /* 背景の画像を指定 */
+	animation-delay  : 5s;
+	background-size: cover;
+  }
+  .box .src3 {
+	background-image : url("../images/pic_bg2.jpeg"); 
+	background-repeat: no-repeat;  /* 背景の画像を指定 */
+	animation-delay  : 10s;
+	background-size: cover;
+  }
+  .box .src4 {
+	background-image : url("../images/pic_bg3.jpeg"); 
+	background-repeat: no-repeat;  /* 背景の画像を指定 */
+	animation-delay  : 15s;
+	background-size: cover;
+  }
+  
+  @keyframes bgAnime {
+	 0% { opacity: 0; }
+	 5% { opacity: 1; }
+	25% { opacity: 1; }
+	30% { opacity: 0; }
+   100% { opacity: 0; }
+  }
+
+/* 共通部分ここまで */
+
+/* top */
+
+
+
+#vegas {
+	width: 100vw;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	position: absolute;
+	left:75px;
+	top:75px;
+}
+
+.header__logo {
+	width: 100px;
+	height: 100px;
+}
+
+.header__nav ul {
+	margin: 37px 50px;
+	display: flex;
+	list-style: none;
+}
+
+.header__nav li {
+	margin: 0 12px;
+}
+
+.address {
+	position: absolute;
+	bottom: 75px;
+}
+
+.address p {
+	margin: 6.5px;
+}
+
+/* topここまで */
+
+/* menu */
+
+.menu_body {
+	background-color: #F5F5F5;
+}
+
+.menu_main__firstview {
+	margin-top: 75px;
+	height: 500px;
+	overflow: hidden;
+}
+
+.menu_main__firstview img {
+	width: 100%;
+}
+
+.menu_main__list {
+	margin-top: 56px;
+}
+
+.menu_main__list h1 {
+	text-align: center;
+}
+
+/* menuここまで */
